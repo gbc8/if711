@@ -33,13 +33,6 @@ func (d *Sincronizar) Cast() {
 	}
 }
 
-func (d *Sincronizar) consumir(wg *sync.WaitGroup) int {
-	responseChan := make(chan int)
-	d.consumidores <- responseChan
-	response := <-responseChan
-	return response
-}
-
 func main() {
 
 	wg := sync.WaitGroup{}

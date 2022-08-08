@@ -49,7 +49,7 @@ func (b *Barbearia) Barbeiro(wg *sync.WaitGroup) {
 			fmt.Println("Barbeiro foi dormir")
 			b.barbeiroAcordado = false
 		}
-		Cliente := <-b.cortando
+		Cliente := <- b.cortando
 		if !b.barbeiroAcordado {
 			fmt.Println("Cliente", Cliente.id, "acordou o barbeiro")
 		}
