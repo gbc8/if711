@@ -29,7 +29,7 @@ func IniciarClienteUDP() {
 
 		buffer := make([]byte, 512)
 		_, _, err := c.ReadFromUDP(buffer)
-		//t, _, err := c.ReadFromUDP(buffer)
+		// t, _, err := c.ReadFromUDP(buffer)
 		if err != nil {
 			fmt.Println(err)
 			return

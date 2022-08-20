@@ -19,8 +19,8 @@ func IniciarClienteTCP() {
 		c.Write([]byte(texto + "\n"))
 
 		_, _ = bufio.NewReader(c).ReadString('\n')
-		//resp, _ := bufio.NewReader(c).ReadString('\n')
-		//fmt.Println("Sem vogal:", resp)
+		// resp, _ := bufio.NewReader(c).ReadString('\n')
+		// fmt.Println("Sem vogal:", resp)
 	}
 	c.Close()
 	tempo := time.Since(comeco)
