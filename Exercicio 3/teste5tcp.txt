@@ -1,0 +1,1 @@
+Cliente TCP acabou com:  58.292649ms
